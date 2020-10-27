@@ -16,6 +16,7 @@ public class HelloworldApplication {
 	class HelloworldController {
 		@GetMapping("/")
 		String hello() {
+			System.out.println("target to hello world");
 			return "Hello " + target + "!";
 		}
 	}
